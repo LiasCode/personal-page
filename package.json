@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack serve --config ./webpack.config.js --mode development --live-reload --open --port 3000 --color --watch-files ./src/**/*",
     "build": "webpack build --config ./webpack.config.js --color --mode production",
-    "clean": "rmdir dist /S /Q"
+    "clean": "rmdir dist /S /Q",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "LiasCode",
@@ -26,6 +27,7 @@
     "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.2.4",
     "css-loader": "^6.7.1",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.0",
     "style-loader": "^3.3.1",
